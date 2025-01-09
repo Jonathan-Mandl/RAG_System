@@ -162,9 +162,3 @@ def Query(query, constraint=None):
     
     return answer
 
-if __name__ == '__main__':
-    
-    query = 'אפשר טלפון למוקד של נפגעי חרדה?'
-
-    Query(query, 1000)
-
