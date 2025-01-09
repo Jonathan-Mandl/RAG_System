@@ -10,6 +10,7 @@ This repository contains a Python-based implementation of a Retrieval-Augmented 
 - **Utility Functions (`Utils.py`)**: Includes helper functions to support the RAG system's operations.
 - **RAG Pipeline (`RAG_system.py`)**: Full implementation of the RAG pipeline using OpenAI's API.
 - **Chat App (`RAG_chat.py`)**: Code for an interactive Streamlit application.
+- **Alternative indexing methods (`bert_indexing.py`,`sentence_transformer_embed.py`)**: code for alternative dense, vector-based indices we experimented with
 
 ## Installation
 
