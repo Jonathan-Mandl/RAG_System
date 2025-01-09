@@ -1,6 +1,6 @@
-# RAG_System
+# Hebrew RAG System - "כל זכות" webiste
 
-RAG_System is a Python-based implementation of a Retrieval-Augmented Generation (RAG) system for the "כל זכות" website in Hebrew. The system is designed to enhance the capabilities of language models by integrating external knowledge from website documents through retrieval mechanisms.
+This repository contains a Python-based implementation of a Retrieval-Augmented Generation (RAG) system in Hebrew for the "כל זכות" website. The system is designed to enhance the capabilities of language models by integrating external knowledge from website documents through retrieval mechanisms.
 
 ## Features
 
