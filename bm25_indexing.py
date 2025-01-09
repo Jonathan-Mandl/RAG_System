@@ -185,22 +185,4 @@ def find_docs_bm25_with_sections(queries, k=20):
     return top_doc_ids, top_sec_ids
     
 
-if __name__ == "__main__":
-
-    docs_path = "indexed_content.jsonl"
-
-    docs_map = read_original_docs(docs_path)
-
-    # Example usage
-    user_query = "מהן הזכויות שלי לאחר שפיטרו אותי לא כהוגן במהלך חופשת הלידה שלי"  # A Hebrew query
-
-    results = full_bm25_index.retrieve_sections(user_query, k=5)
-    
-    print(get_display(f"Top 5 results for query:{user_query}"))
-    for doc_idx, score in results:
-        # doc_idx corresponds to section_units[doc_idx]
-        doc_id = full_bm25_index.index_units[doc_idx][0]
-        docs_data = docs_map[doc_id]
-        doc_str  = json.dumps(docs_data, ensure_ascii=False) 
-        print(get_display(f"Match score: {str(score)} \n {doc_str}"))
 
